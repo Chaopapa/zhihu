@@ -2,7 +2,60 @@
   position: absolute;
   top: 0;
   width: 100%;
-  height: 71px; }
+  height: 71px;
+  background: transparent; }
 
 .mine-main {
-  padding-bottom: 44px; }
+  padding-bottom: 44px;
+  background: #000; }
+  .mine-main-topic {
+    height: 3.34rem;
+    width: 6.94rem;
+    background: #fff;
+    margin: 0 auto;
+    padding: 0.3rem;
+    box-sizing: border-box;
+    border-radius: 6px; }
+    .mine-main-topic .mine-main-user {
+      float: left; }
+      .mine-main-topic .mine-main-user .touxiang {
+        width: 1.20rem;
+        float: left; }
+      .mine-main-topic .mine-main-user .user-info {
+        float: left;
+        margin-left: 0.1rem; }
+        .mine-main-topic .mine-main-user .user-info h3 {
+          font-size: 0.34rem;
+          margin-top: 0.14rem; }
+        .mine-main-topic .mine-main-user .user-info span {
+          display: block;
+          margin-top: .21rem;
+          font-size: .16rem;
+          color: #0084ff;
+          width: 2.26rem;
+          height: 0.45rem;
+          background: #e5f2ff;
+          border-radius: .45rem;
+          line-height: .45rem;
+          text-align: center; }
+    .mine-main-topic .mine-main-index {
+      float: right;
+      font-size: 0.26rem;
+      margin-top: 0.48rem;
+      color: #999; }
+    .mine-main-topic .main-topic-list {
+      display: flex;
+      margin-top: .69rem; }
+      .mine-main-topic .main-topic-list li {
+        flex: 1;
+        border-left: 1px solid #d3d3d3;
+        box-sizing: border-box;
+        text-align: center; }
+        .mine-main-topic .main-topic-list li span {
+          font-size: .3rem;
+          color: #1a1a1a; }
+        .mine-main-topic .main-topic-list li p {
+          margin-top: .16rem;
+          font-size: .24rem; }
+        .mine-main-topic .main-topic-list li:nth-of-type(1) {
+          border-left: 0; }

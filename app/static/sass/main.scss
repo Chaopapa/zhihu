@@ -7,10 +7,31 @@ footer {
     ul {
         display: flex;
         text-align: center;
+        padding-top: 6px;
+        font-weight: bold;
         li {
             flex: 1;
-            display: flex;
-            flex-direction: column;
+            a {
+                display: flex;
+                flex-direction: column;
+                color: #444;
+                width: 100%;
+                height: 100%;
+                .add-box {
+                    width: 28px;
+                    height: 36px;
+                    border-radius: 6px;
+                    background: #0084ff;
+                    color: #fff;
+                    font-weight: normal;
+                    text-align: center;
+                    line-height: 36px;
+                    transform: translate(100%, -5%);
+                }
+            }
+        }
+        .iconfont {
+            font-size: 20px;
         }
     }
 }
