@@ -5,74 +5,131 @@
     height: 71px;
     // background: #138dfe;
     background: transparent;
+    box-sizing: border-box;
+    padding: 25px 15px 15px;
+    // padding: .5rem .3rem .3rem;
+    display: flex;
+    justify-content: space-between;
+    &-search {
+        width: 266px;
+        // width: 5.32rem;
+        height: 32px;
+        // height: .64rem;
+        background: #0887fe;
+        border-radius: 6px;
+        overflow: hidden;
+        form {
+            width: 100%;
+            height: 100%;
+            input {
+                width: 100%;
+                height: 100%;
+                border: 0;
+                padding-left: 115px;
+                // padding-left: 2.3rem;
+                box-sizing: border-box;
+                background: #0887fe;
+                color: #fff;
+            }
+        }
+    }
+    &-func {
+        // float: right;
+        width: 80px;
+        height: 32px;
+        // height: .64rem;
+        // line-height: .64rem;
+        line-height: 32px;
+        padding-right: 5px;
+        // padding-right: .1rem;
+        box-sizing: border-box;
+        span {
+            padding-left: 15px;
+            // padding-left: .3rem;
+        }
+        .iconfont {
+            color: #fff;
+            font-size: 20px;
+        }
+    }
 }
 
 // 我的页面主要内容部分
 .mine-main {
     padding-bottom: 44px;
-    background: #000;
-    &-topic {
-        height: 3.34rem;
-        width: 6.94rem;
-        background: #fff;
-        margin: 0 auto;
-        padding: 0.3rem;
-        box-sizing: border-box;
-        border-radius: 6px;
-        .mine-main-user {
-            float: left;
-            .touxiang {
-                width: 1.20rem;
+    background: #f6f6f6;
+    overflow: hidden;
+    .main-top-box {
+        height: 4.89rem;
+        padding-top: 1.41rem;
+        background: #319bfd;
+        .mine-main-topic {
+            height: 3.34rem;
+            width: 6.94rem;
+            background: #fff;
+            margin: 0 auto;
+            padding: 0.3rem;
+            box-sizing: border-box;
+            border-radius: .12rem;
+            .mine-main-user {
                 float: left;
-            }
-            .user-info {
-                float: left;
-                margin-left: 0.1rem;
-                h3 {
-                    font-size: 0.34rem;
-                    margin-top: 0.14rem;
+                .touxiang {
+                    width: 1.20rem;
+                    float: left;
                 }
-                //盐值
-                span {
-                    display: block;
-                    margin-top: .21rem;
-                    font-size: .16rem;
-                    color: #0084ff;
-                    width: 2.26rem;
-                    height: 0.45rem;
-                    background: #e5f2ff;
-                    border-radius: .45rem;
-                    line-height: .45rem;
+                .user-info {
+                    float: left;
+                    margin-left: 0.1rem;
+                    h3 {
+                        font-size: 0.34rem;
+                        margin-top: 0.14rem;
+                    }
+                    //盐值
+                    span {
+                        display: block;
+                        margin-top: .21rem;
+                        font-size: .16rem;
+                        color: #0084ff;
+                        width: 2.26rem;
+                        height: 0.45rem;
+                        background: #e5f2ff;
+                        border-radius: .45rem;
+                        line-height: .45rem;
+                        text-align: center;
+                    }
+                }
+            }
+            .mine-main-index {
+                float: right;
+                font-size: 0.26rem;
+                margin-top: 0.48rem;
+                color: #999;
+            }
+            .main-topic-list {
+                display: flex;
+                margin-top: .69rem;
+                li {
+                    flex: 1;
+                    border-left: 1px solid #d3d3d3;
+                    box-sizing: border-box;
                     text-align: center;
+                    font-weight: bold;
+                    span {
+                        font-size: .3rem;
+                        color: #1a1a1a;
+                    }
+                    p {
+                        margin-top: .16rem;
+                        font-size: .24rem;
+                    }
+                    &:nth-of-type(1) {
+                        border-left: 0;
+                    }
                 }
             }
         }
-        .mine-main-index {
-            float: right;
-            font-size: 0.26rem;
-            margin-top: 0.48rem;
-            color: #999;
-        }
-        .main-topic-list {
-            display: flex;
-            margin-top: .69rem;
-            li {
-                flex: 1;
-                border-left: 1px solid #d3d3d3;
-                box-sizing: border-box;
-                text-align: center;
-                span {
-                    font-size: .3rem;
-                    color: #1a1a1a;
-                }
-                p {
-                    margin-top: .16rem;
-                    font-size: .24rem;
-                }
-                &:nth-of-type(1) {
-                    border-left: 0;
-                }
-            }
-        }
+    }
+    .mine-main-vip {
+        height: 1.14rem;
     }
 }
