@@ -1,8 +1,7 @@
 $(function(){
-    new MyScroll('.mine-main',{
+    new IScroll('.mine-main',{
         click:true,
-        tap:true
-
+        tap:true,
     });
 
 

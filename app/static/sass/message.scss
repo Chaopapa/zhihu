@@ -1,0 +1,116 @@
+// 消息页面样式
+.message-header{
+    width: 100%;
+    height: 44px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    nav{
+        width: 100%;
+        height: 100%;
+        ul{
+            display: flex;
+            li{
+                flex: 1;
+                box-sizing: border-box;
+                &:nth-of-type(1){
+                    text-align: right;
+                    padding-right: 37px;
+                }
+                &:nth-of-type(2){
+                    text-align: left;
+                    padding-left:37px;
+                }
+                a{  
+                    height: 44px;
+                    text-align: left;
+                    display: inline-block;
+                    line-height: 44px;
+                    font-size: 14px;
+                    color: #1a1a1a;
+                    &:active{
+                        color: #808080;
+                    }
+                }
+                
+            }
+        }
+    }
+    span{
+        position: absolute;
+        top: 0;
+        right: 15px;
+
+        line-height: 44px;
+    }
+}
+.message-main{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 44px;
+    bottom: 43px;
+    left: 0;
+    background: #f6f6f6;
+    &-wrap{
+        .list-header{
+            padding: 0 11px 0 12px;
+            height: 41px;
+            line-height: 41px;
+            font-size: 13px;
+            border-bottom: 1px solid #ccc;
+            background: #fff;
+            h3{
+                float:left;
+                color: #a6a6a6;
+            }
+            .m-read{
+                float:right;
+                color: #8590a6;
+            }
+        }
+    }
+    .message-list{
+        li{
+            height: 1.88rem;
+            padding-top:.18rem;
+            padding-left: .3rem;
+            background: #fff;
+            .message-list-img{
+                float: left;
+                width: .9rem;
+                img{
+                    width: .9rem;
+                }
+            }
+            .message-list-content{
+                float: left;
+                width: 6.13rem;
+                margin-left: .17rem;
+                height: 1.88rem;
+                border-bottom: 1px solid #ccc;
+                h4{
+                    font-size: .28rem;
+
+                }
+                .m-desc{
+                    font-size: .28rem;
+                    line-height: .45rem;
+                    color: #808080;
+                }
+                .m-content{
+                    font-size: .28rem;
+                    color: #4d4d4c;
+                    line-height: .52rem;
+                }
+                .m-time{
+                    line-height: .42rem;
+                    color: #bfbfbf;
+                }
+            }
+
+        }
+    }
+}
