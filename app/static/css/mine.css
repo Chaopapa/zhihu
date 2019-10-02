@@ -5,10 +5,10 @@
   width: 100%;
   height: 71px;
   background: transparent;
-  z-index: 2;
+  z-index: 3;
   box-sizing: border-box;
   padding: 25px 15px 15px;
-  display: flex;
+  display: none;
   justify-content: space-between; }
   .mine-header-search {
     width: 266px;
@@ -47,6 +47,46 @@
   top: 0;
   background: #f6f6f6;
   overflow: hidden; }
+  .mine-main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 71px;
+    background: transparent;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 25px 15px 15px;
+    display: flex;
+    justify-content: space-between; }
+    .mine-main-header-search {
+      width: 266px;
+      height: 32px;
+      background: #0887fe;
+      border-radius: 6px;
+      overflow: hidden; }
+      .mine-main-header-search form {
+        width: 100%;
+        height: 100%; }
+        .mine-main-header-search form input {
+          width: 100%;
+          height: 100%;
+          border: 0;
+          padding-left: 115px;
+          box-sizing: border-box;
+          background: #0887fe;
+          color: #fff; }
+    .mine-main-header-func {
+      width: 80px;
+      height: 32px;
+      line-height: 32px;
+      padding-right: 5px;
+      box-sizing: border-box; }
+      .mine-main-header-func span {
+        padding-left: 15px; }
+      .mine-main-header-func .iconfont {
+        color: #fff;
+        font-size: 20px; }
   .mine-main .mine-main-wrap {
     overflow: hidden; }
   .mine-main .main-top-box {
@@ -61,11 +101,11 @@
       margin: 0 auto;
       padding: 0.3rem;
       box-sizing: border-box;
-      border-radius: .12rem; }
+      border-radius: 0.12rem; }
       .mine-main .main-top-box .mine-main-topic .mine-main-user {
         float: left; }
         .mine-main .main-top-box .mine-main-topic .mine-main-user .touxiang {
-          width: 1.20rem;
+          width: 1.2rem;
           float: left; }
         .mine-main .main-top-box .mine-main-topic .mine-main-user .user-info {
           float: left;
@@ -75,14 +115,14 @@
             margin-top: 0.14rem; }
           .mine-main .main-top-box .mine-main-topic .mine-main-user .user-info span {
             display: block;
-            margin-top: .21rem;
-            font-size: .16rem;
+            margin-top: 0.21rem;
+            font-size: 0.16rem;
             color: #0084ff;
             width: 2.26rem;
             height: 0.45rem;
             background: #e5f2ff;
-            border-radius: .45rem;
-            line-height: .45rem;
+            border-radius: 0.45rem;
+            line-height: 0.45rem;
             text-align: center; }
       .mine-main .main-top-box .mine-main-topic .mine-main-index {
         float: right;
@@ -91,7 +131,7 @@
         color: #999; }
       .mine-main .main-top-box .mine-main-topic .main-topic-list {
         display: flex;
-        margin-top: .69rem; }
+        margin-top: 0.69rem; }
         .mine-main .main-top-box .mine-main-topic .main-topic-list li {
           flex: 1;
           border-left: 1px solid #d3d3d3;
@@ -99,14 +139,127 @@
           text-align: center;
           font-weight: bold; }
           .mine-main .main-top-box .mine-main-topic .main-topic-list li span {
-            font-size: .3rem;
+            font-size: 0.3rem;
             color: #1a1a1a; }
           .mine-main .main-top-box .mine-main-topic .main-topic-list li p {
-            margin-top: .16rem;
-            font-size: .24rem; }
+            margin-top: 0.16rem;
+            font-size: 0.24rem; }
           .mine-main .main-top-box .mine-main-topic .main-topic-list li:nth-of-type(1) {
             border-left: 0; }
-  .mine-main .mine-main-vip {
-    height: 1.14rem; }
   .mine-main .list li {
-    line-height: 1rem; }
+    height: 100px; }
+  .mine-main .mine-main-vip {
+    height: 1.14rem;
+    background: #fff; }
+    .mine-main .mine-main-vip img {
+      width: 0.62rem;
+      vertical-align: middle;
+      margin-left: 0.22rem; }
+    .mine-main .mine-main-vip .vip-title {
+      font-size: 0.29rem;
+      color: #bf9356;
+      line-height: 1.14rem;
+      margin-left: 0.24rem; }
+  .mine-main .mine-main-list {
+    height: 2.97rem;
+    background: #fff;
+    margin-top: 0.17rem; }
+    .mine-main .mine-main-list ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      .mine-main .mine-main-list ul li {
+        height: 50%;
+        width: 25%; }
+  .mine-main .mine-main-help {
+    height: 1.61rem;
+    background: #fff;
+    margin-top: 0.17rem; }
+    .mine-main .mine-main-help ul {
+      width: 100%;
+      height: 100%;
+      display: flex; }
+      .mine-main .mine-main-help ul li {
+        flex: 1; }
+  .mine-main .mine-main-card {
+    height: 0.95rem;
+    background: #f6f6f6;
+    line-height: 0.95rem; }
+    .mine-main .mine-main-card h3 {
+      float: left;
+      padding-left: 0.3rem;
+      font-size: 0.3rem;
+      color: #1a1a1a; }
+    .mine-main .mine-main-card p {
+      float: right;
+      padding-right: 0.35rem;
+      font-size: 0.26rem;
+      color: #0084ff; }
+  .mine-main .mine-main-create {
+    height: 2.99rem;
+    background: #fff;
+    overflow: hidden; }
+    .mine-main .mine-main-create .createTitle {
+      margin-top: 0.32rem;
+      height: 0.37rem;
+      margin-bottom: 0.55rem;
+      line-height: 0.37rem; }
+      .mine-main .mine-main-create .createTitle h3 {
+        float: left;
+        padding-left: 0.3rem;
+        font-size: 0.3rem;
+        color: #1a1a1a; }
+      .mine-main .mine-main-create .createTitle p {
+        float: right;
+        padding-right: 0.47rem;
+        font-size: 0.21rem;
+        color: #a7a7a7; }
+    .mine-main .mine-main-create .createNum {
+      display: flex;
+      text-align: center;
+      height: 1.41rem; }
+      .mine-main .mine-main-create .createNum-read {
+        height: 100%;
+        flex: 1;
+        border-right: 1px solid #a7a7a7; }
+      .mine-main .mine-main-create .createNum-up {
+        height: 100%;
+        flex: 1; }
+    .mine-main .mine-main-create-title {
+      font-size: 0.24rem;
+      color: #8590a6; }
+    .mine-main .mine-main-create-num {
+      margin: 0.24rem 0;
+      font-size: 0.29rem;
+      color: #636363;
+      font-weight: bolder; }
+    .mine-main .mine-main-create-about {
+      color: #8590a6;
+      font-size: 0.22rem; }
+      .mine-main .mine-main-create-about span {
+        padding-left: 0.25rem; }
+      .mine-main .mine-main-create-about i {
+        font-size: 0.22rem;
+        color: #444;
+        font-weight: bolder; }
+  .mine-main .mine-main-reply {
+    height: 4.19rem;
+    background: #fff;
+    margin-top: .17rem;
+    overflow: hidden; }
+    .mine-main .mine-main-reply .replyTitle {
+      margin-top: 0.32rem;
+      height: 0.37rem;
+      margin-bottom: 0.37rem;
+      line-height: 0.37rem; }
+      .mine-main .mine-main-reply .replyTitle h3 {
+        float: left;
+        padding-left: 0.3rem;
+        font-size: 0.3rem;
+        color: #1a1a1a; }
+      .mine-main .mine-main-reply .replyTitle p {
+        float: right;
+        padding-right: 0.47rem;
+        font-size: 0.21rem;
+        color: #a7a7a7; }
