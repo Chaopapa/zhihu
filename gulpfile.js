@@ -4,6 +4,12 @@
 // gulp模块
 const gulp = require('gulp');
 
+//gulp服务模块
+const webserver = require('gulp-webserver');
+
+//中间件模块
+const mockDataMiddleware = require('./data/mockDataMiddleware');
+
 // 压缩js
 const uglify = require('gulp-uglify');
 
@@ -13,8 +19,7 @@ const minifyCss = require('gulp-minify-css');
 // 压缩html
 const minifyHtml = require('gulp-minify-html');
 
-// 压缩图片
-const imagemin = require('gulp-imagemin');
+// 压缩图片//const imagemin = require('gulp-imagemin');
 
 // 编译sass
 const sass = require('gulp-sass');
@@ -40,7 +45,7 @@ const runSequence = require('gulp-run-sequence');
 const zip = require('gulp-zip');
 
 // 删除文件
-const clean = require('gulp-clean');
+//const clean = require('gulp-clean');
 
 // 自动刷新
 var server = require('browser-sync').create(); //执行函数返回对象
@@ -143,3 +148,20 @@ gulp.task('redist', function() {
 
 //在终端上输入gulp命令，会默认执行default任务，并执行redist任务
 gulp.task('default', ['redist']);
+
+gulp.task('webserver', ()=>{
+
+  gulp.src('./')//该文件夹是服务器的根路径
+  .pipe(
+    webserver({
+      host: '127.0.0.1',
+      port: '8080',
+      livereload: true,//热更新
+      directoryListing: true,//是否文件夹列表
+      open: false,//打开浏览器
+      // 中间件,拦截请求
+      middleware: mockDataMiddleware
+    })
+  );
+  
+});

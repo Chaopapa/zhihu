@@ -25,9 +25,9 @@ function MyScroll(dom,options){
     myScroll.on("scrollEnd",function(){
         console.log(myScroll.y);
         if(myScroll.y>=0){//满足刷新条件加载    
-           options.loadMessage(function(){
+           options.refreshData&&options.refreshData(function(){
                myScroll.scrollTo(0,-50,300);
-           })
+           });
         }else if(myScroll.y>-50&&myScroll.y<0){//不刷新
             myScroll.scrollTo(0,-50,300);
         }

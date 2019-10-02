@@ -65,7 +65,8 @@
       float: left;
       width: .9rem; }
       .message-main .message-list li .message-list-img img {
-        width: .9rem; }
+        width: .9rem;
+        border-radius: .9rem; }
     .message-main .message-list li .message-list-content {
       float: left;
       width: 6.13rem;
