@@ -158,7 +158,7 @@ gulp.task('webserver', ()=>{
       port: '8080',
       livereload: true,//热更新
       directoryListing: true,//是否文件夹列表
-      open: false,//打开浏览器
+      open: true,//打开浏览器
       // 中间件,拦截请求
       middleware: mockDataMiddleware
     })
