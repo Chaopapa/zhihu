@@ -1,0 +1,149 @@
+.index-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  padding: 5px 24px 0 12px;
+  box-sizing: border-box;
+  &-search {
+    width: 299px;
+    height: 35px;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+    form {
+      width: 100%;
+      height: 100%;
+      input {
+        border: 0;
+        outline: none;
+        width: 100%;
+        padding-left: 33px;
+        box-sizing: border-box;
+        height: 100%;
+      }
+    }
+  }
+  &-func {
+    float: right;
+    width: 17px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #999;
+  }
+}
+.index-nav {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+// 首页主要内容
+.index-main {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  left: 0;
+  bottom: 43px;
+  overflow: hidden;
+  background: #f6f6f6;
+  &-wrap {
+    overflow: hidden;
+    .index-list-tip {
+      padding: 0 14px;
+      height: 55px;
+      line-height: 55px;
+      background: #fff;
+      .tip-left {
+        color: #1a1a1a;
+        font-size: 14px;
+        float: left;
+        width: 147px;
+      }
+      .tip-right {
+        float: right;
+        width: 150px;
+        height: 55px;
+        img {
+          vertical-align: middle;
+          width: 94px;
+        }
+      }
+    }
+    .index-main-list {
+      li {
+        height: 295px;
+        background: #fff;
+        padding: 15px 15px 18px 13px;
+        margin-top: 8px;
+        .item {
+          width: 100%;
+          height: 100%;
+          display: block;
+          .index-list-title {
+            overflow: hidden;
+            &-info {
+              width: 105px;
+              & > img {
+                display: block;
+                width: 33px;
+                float: left;
+              }
+              div {
+                float: left;
+                width: 63px;
+                margin-left: 8px;
+                h4 {
+                  font-size: 14px;
+                  color: #1a1a1a;
+                  img {
+                    width: 14px;
+                  }
+                }
+                p {
+                  font-size: 11px;
+                  line-height: 17px;
+                  color: #a0a0a0;
+                }
+              }
+            }
+            span {
+              float: right;
+              font-size: 11px;
+              color: #999;
+            }
+          }
+        }
+        .index-list-content {
+          height: 166px;
+          line-height: 23px;
+          font-size: 15px;
+          color: #191919;
+          margin-top: 8px;
+          overflow: hidden;
+          p {
+            margin-bottom: 30px;
+          }
+        }
+        .index-list-opa {
+          margin-top: 24px;
+          object {
+            display: flex;
+            a {
+              flex: 1;
+              display: block;
+              &:last-of-type {
+                width: 149px;
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
