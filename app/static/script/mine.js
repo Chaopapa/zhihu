@@ -17,7 +17,11 @@ $(function(){
             $('.mine-main-header').css('display','flex');
         }
             
-    })
+    });
+
+    var answerSwiper  =new Swiper('.answer-swiper',{
+
+    });
 
 
 

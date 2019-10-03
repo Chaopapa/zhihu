@@ -62,9 +62,9 @@
   top: 0;
   background: #f6f6f6;
   overflow: hidden;
-  
+
   &-header {
-    transition: all .6s;
+    transition: all 0.6s;
     position: absolute;
     top: 0;
     left: 0;
@@ -316,10 +316,10 @@
     }
   }
   .mine-main-reply {
-      height: 4.19rem;
-      background: #fff;
-      margin-top: .17rem;
-      overflow: hidden;
+    height: 4.19rem;
+    background: #fff;
+    margin-top: 0.17rem;
+    overflow: hidden;
     .replyTitle {
       margin-top: 0.32rem;
       height: 0.37rem;
@@ -336,6 +336,47 @@
         padding-right: 0.47rem;
         font-size: 0.21rem;
         color: #a7a7a7;
+      }
+    }
+    .answer-swiper {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  .mine-main-video {
+    height: 3.38rem;
+    background: #fff;
+    margin-top: 0.17rem;
+    overflow: hidden;
+    .video-title {
+      margin-top: 0.32rem;
+      height: 0.37rem;
+      margin-bottom: 0.37rem;
+      line-height: 0.37rem;
+      h3 {
+        float: left;
+        padding-left: 0.3rem;
+        font-size: 0.3rem;
+        color: #1a1a1a;
+      }
+    }
+  }
+
+  .mine-main-think {
+    height: 3.38rem;
+    background: #fff;
+    margin-top: 0.17rem;
+    overflow: hidden;
+    .think-title {
+      margin-top: 0.32rem;
+      height: 0.37rem;
+      margin-bottom: 0.37rem;
+      line-height: 0.37rem;
+      h3 {
+        float: left;
+        padding-left: 0.3rem;
+        font-size: 0.3rem;
+        color: #1a1a1a;
       }
     }
   }
