@@ -23,7 +23,8 @@
   width: 100%;
   top: 45px;
   bottom: 44px;
-  background: #ebebeb; }
+  background: #ebebeb;
+  overflow: hidden; }
   .detail-main-content {
     background: #fff;
     height: 5.74rem; }
@@ -79,7 +80,7 @@
           width: .89rem;
           vertical-align: middle; }
     .detail-main-comment-main ul li {
-      height: 2.79rem;
+      height: 2.55rem;
       padding: .24rem .46rem 0 .19rem; }
       .detail-main-comment-main ul li .comment-img {
         width: .67rem;
@@ -89,8 +90,9 @@
       .detail-main-comment-main ul li .comment-text {
         float: left;
         width: 5.94rem;
-        height: 2.21rem;
-        margin-left: .21rem; }
+        height: 2.55rem;
+        margin-left: .21rem;
+        border-bottom: 1px solid #d3d3d3; }
         .detail-main-comment-main ul li .comment-text .comment-name {
           width: 100%;
           position: relative;

@@ -26,6 +26,7 @@
   top: 45px;
   bottom: 44px;
   background: #ebebeb;
+  overflow: hidden;
   &-content {
     background: #fff;
     height: 5.74rem;
@@ -103,7 +104,7 @@
     &-main {
       ul {
         li {
-          height: 2.79rem;
+          height: 2.55rem;
           padding: .24rem .46rem 0 .19rem;
           .comment-img{
             width: .67rem;
@@ -115,8 +116,9 @@
           .comment-text{
             float: left;
             width: 5.94rem;
-            height: 2.21rem;
+            height: 2.55rem;
             margin-left:.21rem;
+            border-bottom: 1px solid #d3d3d3;
             .comment-name{
               width: 100%;
               position: relative;
