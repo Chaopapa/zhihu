@@ -19,8 +19,12 @@ $(function(){
     });
 
     var answerSwiper  =new Swiper('.answer-swiper',{
-      
+      loop:true
     });
+
+    var videoSwiper = new Swiper('.video-swiper',{
+        loop:true
+    })
 
 
 
