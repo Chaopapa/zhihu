@@ -317,8 +317,8 @@
         color: #1a1a1a; }
     .mine-main .mine-main-video .swiper-slide {
       height: 2.07rem;
-      padding-left: .27rem;
-      padding-right: .6rem;
+      padding-left: 0.27rem;
+      padding-right: 0.6rem;
       box-sizing: border-box;
       overflow: hidden; }
       .mine-main .mine-main-video .swiper-slide .slide-img-text {
@@ -327,13 +327,13 @@
           width: 1rem;
           float: left; }
         .mine-main .mine-main-video .swiper-slide .slide-img-text .slide-content {
-          width: 4.90rem;
+          width: 4.9rem;
           float: left;
-          margin-left: .17rem;
-          font-size: .26rem;
+          margin-left: 0.17rem;
+          font-size: 0.26rem;
           color: #1a1a1a; }
       .mine-main .mine-main-video .swiper-slide .slide-bottom {
-        margin-top: .5rem;
+        margin-top: 0.5rem;
         overflow: hidden; }
         .mine-main .mine-main-video .swiper-slide .slide-bottom span {
           line-height: 0.57rem;
@@ -364,5 +364,36 @@
         padding-left: 0.3rem;
         font-size: 0.3rem;
         color: #1a1a1a; }
+    .mine-main .mine-main-think .think-content {
+      height: 2.06rem;
+      padding-left: 0.27rem;
+      padding-right: 0.6rem;
+      box-sizing: border-box; }
+      .mine-main .mine-main-think .think-content-text-img {
+        height: 1.02rem; }
+        .mine-main .mine-main-think .think-content-text-img img {
+          width: 1.02rem;
+          float: left; }
+        .mine-main .mine-main-think .think-content-text-img .think-content-text {
+          width: 4.02rem;
+          margin-left: .17rem;
+          float: left; }
+      .mine-main .mine-main-think .think-content .slide-bottom {
+        margin-top: 0.5rem;
+        overflow: hidden; }
+        .mine-main .mine-main-think .think-content .slide-bottom span {
+          line-height: 0.57rem;
+          float: left; }
+        .mine-main .mine-main-think .think-content .slide-bottom a {
+          float: right;
+          width: 1.47rem;
+          line-height: 0.57rem;
+          font-size: 0.24rem;
+          text-align: center;
+          border-radius: 0.06rem;
+          display: inline-block;
+          background: #e6f3ff;
+          color: #91caff;
+          margin-right: 1.15rem; }
 
 /*# sourceMappingURL=mine.css.map */
