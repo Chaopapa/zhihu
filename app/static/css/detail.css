@@ -1,0 +1,156 @@
+@charset "UTF-8";
+.detail-header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  font-size: 16px;
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around; }
+  .detail-header .detail-back {
+    width: 20px; }
+  .detail-header h4 {
+    width: 310px;
+    text-align: center;
+    font-size: 16px; }
+  .detail-header .detail-more {
+    width: 20px; }
+
+.detail-main {
+  position: absolute;
+  width: 100%;
+  top: 45px;
+  bottom: 44px;
+  background: #ebebeb; }
+  .detail-main-content {
+    background: #fff;
+    height: 5.74rem; }
+    .detail-main-content-img {
+      float: left;
+      width: 0.68rem;
+      margin-left: 10px;
+      margin-top: 10px; }
+      .detail-main-content-img img {
+        width: 0.68rem; }
+    .detail-main-content-text {
+      width: 6.08rem;
+      float: left;
+      margin-left: 10px;
+      margin-top: 10px;
+      font-size: 16px; }
+      .detail-main-content-text .detail-name {
+        font-size: 16px; }
+        .detail-main-content-text .detail-name img {
+          width: 16px; }
+      .detail-main-content-text .detail-time {
+        font-size: 11px;
+        color: #999; }
+      .detail-main-content-text .detail-content p {
+        font-size: .28rem;
+        color: #1a1b1b;
+        margin-bottom: .58rem; }
+      .detail-main-content-text .detail-opa {
+        margin-top: -.13rem; }
+        .detail-main-content-text .detail-opa li {
+          float: left;
+          width: 1.45rem;
+          font-size: .31rem;
+          color: #646464; }
+  .detail-main-comment {
+    margin-top: 0.17rem;
+    background: #fff; }
+    .detail-main-comment-header {
+      height: 0.96rem;
+      border-bottom: 1px solid #ccc;
+      line-height: .96rem; }
+      .detail-main-comment-header h4 {
+        float: left;
+        margin-left: .22rem;
+        font-size: .27rem;
+        color: #1a1a1a; }
+      .detail-main-comment-header p {
+        float: right;
+        margin-right: .25rem;
+        font-size: .28rem;
+        color: #999; }
+        .detail-main-comment-header p img {
+          width: .89rem;
+          vertical-align: middle; }
+    .detail-main-comment-main ul li {
+      height: 2.79rem;
+      padding: .24rem .46rem 0 .19rem; }
+      .detail-main-comment-main ul li .comment-img {
+        width: .67rem;
+        float: left; }
+        .detail-main-comment-main ul li .comment-img img {
+          width: .67rem; }
+      .detail-main-comment-main ul li .comment-text {
+        float: left;
+        width: 5.94rem;
+        height: 2.21rem;
+        margin-left: .21rem; }
+        .detail-main-comment-main ul li .comment-text .comment-name {
+          width: 100%;
+          position: relative;
+          font-size: .31rem;
+          color: #1a1a1a;
+          margin-bottom: .19rem; }
+          .detail-main-comment-main ul li .comment-text .comment-name img {
+            width: .3rem; }
+          .detail-main-comment-main ul li .comment-text .comment-name span {
+            position: absolute;
+            top: -.2rem;
+            right: 0;
+            margin-bottom: .04rem; }
+      .detail-main-comment-main ul li .comment-article {
+        line-height: .46rem;
+        font-size: .27rem;
+        color: #666; }
+      .detail-main-comment-main ul li .comment-opa {
+        margin-top: .27rem;
+        font-size: .24rem;
+        color: #a1a1a1; }
+        .detail-main-comment-main ul li .comment-opa p {
+          float: right; }
+          .detail-main-comment-main ul li .comment-opa p a {
+            margin-left: .46rem;
+            color: #666; }
+
+.detail-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 44px;
+  line-height: 44px;
+  border-top: 1px solid #ccc;
+  display: flex; }
+  .detail-bottom-opa {
+    width: 86px;
+    text-align: center;
+    display: flex; }
+    .detail-bottom-opa-img {
+      flex: 1; }
+      .detail-bottom-opa-img::before {
+        content: "图"; }
+    .detail-bottom-opa-emoji {
+      flex: 1; }
+      .detail-bottom-opa-emoji::before {
+        content: "emoji"; }
+  .detail-bottom-input {
+    width: 232px;
+    height: 100%; }
+    .detail-bottom-input input {
+      border: 0;
+      width: 100%;
+      height: 100%;
+      outline: none;
+      color: #a1a1a1;
+      font-size: 14px; }
+  .detail-bottom-send {
+    width: 62px;
+    font-size: 14px;
+    color: #88c5ff;
+    text-align: center;
+    cursor: pointer; }
