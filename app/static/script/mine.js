@@ -6,7 +6,6 @@ $(function(){
     });
 
     myScroll.on('scroll',function(){
-        console.log(1);
         if(myScroll.y<-50){
             $('.mine-header').addClass('ani');
             $('.mine-header').css('display','flex');
@@ -20,7 +19,7 @@ $(function(){
     });
 
     var answerSwiper  =new Swiper('.answer-swiper',{
-
+      
     });
 
 
