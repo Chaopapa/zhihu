@@ -21,7 +21,7 @@
   width: 100%;
   top: 45px;
   bottom: 48px;
-  overflow: hidden;
+  overflow: auto;
   background: #ebebeb; }
   .answer-main-title {
     background: #fff;
@@ -78,6 +78,98 @@
         text-align: center;
         line-height: 0.64rem;
         margin-right: 0.28rem; }
+    .answer-main-content > p {
+      padding: 0.41rem 0.32rem 0.96rem 0.28rem;
+      font-size: 0.3rem;
+      line-height: 0.54rem;
+      color: #686868; }
+      .answer-main-content > p span {
+        display: inline-block;
+        margin-top: .66rem;
+        font-size: .22rem;
+        color: #bebebe; }
+    .answer-main-content-other .answer-praise {
+      height: 2.11rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .answer-main-content-other .answer-praise h4 {
+        font-size: 0.3rem;
+        color: #bebebe;
+        text-align: center; }
+      .answer-main-content-other .answer-praise a {
+        display: block;
+        width: 1.52rem;
+        height: 0.65rem;
+        line-height: 0.65rem;
+        text-align: center;
+        background: #ff3366;
+        color: #fff;
+        font-size: 0.26rem;
+        align-self: center;
+        border-radius: 3px; }
+      .answer-main-content-other .answer-praise p {
+        font-size: 0.28rem;
+        color: #bfbfbf;
+        text-align: center; }
+    .answer-main-content-other .answer-ad {
+      width: 6.95rem;
+      height: 3.61rem;
+      border: 1px solid #ccc;
+      margin: .34rem .28rem .78rem;
+      border-radius: 3px;
+      overflow: hidden;
+      position: relative; }
+      .answer-main-content-other .answer-ad h3 {
+        margin-top: .26rem;
+        margin-left: .20rem;
+        font-size: .3rem;
+        color: #1a1a1a; }
+      .answer-main-content-other .answer-ad > p {
+        margin-top: .41rem;
+        margin-left: .2rem;
+        margin-right: .27rem;
+        font-size: .26rem;
+        color: #444;
+        line-height: .47rem; }
+      .answer-main-content-other .answer-ad > div {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: .66rem;
+        line-height: .66rem;
+        text-align: center;
+        border-top: 1px solid #ccc; }
+  .answer-main-comment {
+    background: #fff;
+    overflow: hidden;
+    padding-left: .65rem;
+    padding-right: .33rem; }
+    .answer-main-comment h3 {
+      margin-top: .78rem;
+      font-size: .34rem;
+      color: #1a1a1a; }
+    .answer-main-comment .commentList {
+      margin-top: .33rem; }
+      .answer-main-comment .commentList .commentItem {
+        height: 1.33rem; }
+        .answer-main-comment .commentList .commentItem-img {
+          float: left;
+          width: .5rem; }
+          .answer-main-comment .commentList .commentItem-img img {
+            width: .5rem; }
+        .answer-main-comment .commentList .commentItem-main {
+          float: left;
+          margin-left: .21rem;
+          width: 5.0rem; }
+          .answer-main-comment .commentList .commentItem-main h4 {
+            font-size: .24rem;
+            color: #acacac; }
+          .answer-main-comment .commentList .commentItem-main p {
+            font-size: .26rem;
+            color: #444444; }
+        .answer-main-comment .commentList .commentItem > p {
+          float: right; }
 
 .answer-bottom {
   position: absolute;

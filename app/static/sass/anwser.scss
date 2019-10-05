@@ -27,7 +27,7 @@
   // bottom:47px;
   top: 45px;
   bottom: 48px;
-  overflow: hidden;
+  overflow: auto;
   background: #ebebeb;
   &-title {
     background: #fff;
@@ -98,6 +98,122 @@
         margin-right: 0.28rem;
       }
     }
+    & > p {
+      padding: 0.41rem 0.32rem 0.96rem 0.28rem;
+      font-size: 0.3rem;
+      line-height: 0.54rem;
+      color: #686868;
+      span{
+        display: inline-block;
+        margin-top: .66rem;
+        font-size: .22rem;
+        color: #bebebe;
+
+      }
+    }
+
+    &-other {
+      .answer-praise {
+        height: 2.11rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h4 {
+          font-size: 0.3rem;
+          color: #bebebe;
+          text-align: center;
+        }
+        a {
+          display: block;
+          width: 1.52rem;
+          height: 0.65rem;
+          line-height: 0.65rem;
+          text-align: center;
+          background: #ff3366;
+          color: #fff;
+          font-size: 0.26rem;
+          align-self: center;
+          border-radius: 3px;
+        }
+        p {
+          font-size: 0.28rem;
+          color: #bfbfbf;
+          text-align: center;
+        }
+      }
+      .answer-ad{
+        width: 6.95rem;
+        height: 3.61rem;
+        border: 1px solid #ccc;
+        margin:  .34rem .28rem .78rem;
+        border-radius: 3px;
+        overflow: hidden;
+        position: relative;
+        h3{
+          margin-top:.26rem;
+          margin-left:.20rem;
+          font-size: .3rem;
+          color: #1a1a1a;
+        }
+        &>p{
+          margin-top:.41rem;
+          margin-left:.2rem;
+          margin-right: .27rem;
+          font-size: .26rem;
+          color:#444;
+          line-height: .47rem;
+        }
+        &>div{
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          height: .66rem;
+          line-height: .66rem;
+          text-align: center;
+          border-top: 1px solid #ccc;
+        }
+      }
+    }
+  }
+  &-comment{
+    background: #fff;
+    overflow: hidden;
+    padding-left:.65rem;
+    padding-right:.33rem;
+    h3{
+      margin-top:.78rem;
+      font-size: .34rem;
+      color:#1a1a1a;
+    }
+    .commentList{
+      margin-top:.33rem;
+      .commentItem{
+        height: 1.33rem;
+        &-img{
+          float: left;
+          width: .5rem;
+          img{
+            width: .5rem;
+          }
+        }
+        &-main{
+          float: left;
+          margin-left:.21rem;
+          width: 5.0rem;
+          h4{
+            font-size: .24rem;
+            color: #acacac;
+          }
+          p{
+            font-size: .26rem;
+            color:#444444;
+          }
+        }
+        &>p{
+          float: right;
+        }
+      }
+    }
   }
 }
 .answer-bottom {
@@ -107,7 +223,6 @@
   height: 47px;
   background: #fff;
   border-top: 1px solid #d3d3d3;
-
   &-left {
     float: left;
     width: 110px;
