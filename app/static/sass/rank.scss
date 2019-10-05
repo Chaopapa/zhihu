@@ -1,0 +1,86 @@
+//热榜页面主要内容
+.rank-main {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  left: 0;
+  bottom: 43px;
+  overflow: hidden;
+  background: #f6f6f6;
+  &-wrap{
+      margin-top:51px;
+      overflow: hidden;
+  }
+
+  //导航
+  &-nav{
+      height: 51px;
+      position: absolute;
+      width: 100%;
+      top:0;
+      border-bottom:1px solid #ccc;
+      background: #fff;
+      .nav-swiper{
+       width: 100%;
+       height: 100%;
+       .swiper-slide{
+           width: 58px;
+           height: 28px;
+           line-height: 28px;
+           text-align: center;
+           border-radius: 3px;
+           background: #f6f6f6;
+           color: #808080;
+           margin-left:9px;
+           margin-top:10px;
+       }
+      }
+  }
+
+  //列表
+  &-list{
+    //   position: absolute;
+    //   width: 100%;
+    //   top:52px;
+      .rank-main-item{
+        height: 1.38rem;
+        padding: .24rem .18rem;
+        border-bottom: 1px solid #ccc;
+        background: #fff;
+        &>p{
+            float: left;
+            font-size: .33rem;
+            color:#c2a469;
+        }
+        &>div{
+            float: left;
+            margin-left:.21rem;
+            p{
+                font-size:.33rm;
+                color: #1a1a1a;
+                width: 4.12rem;
+                height: .78rem;
+                line-height: .46rem;
+                margin-bottom: .31rem;
+
+            }
+            span{
+                font-size: .24rem;
+                color:#999999;
+            }
+        }
+        img{
+            float: right;
+            width: 1.39rem;
+        }
+      }
+  }
+  &-noMore{
+      margin-top: .52rem;
+      color: #cbcbcb;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      bottom:.5rem;
+  }
+}
