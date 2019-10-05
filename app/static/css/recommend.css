@@ -6,6 +6,8 @@
   bottom: 43px;
   overflow: hidden;
   background: #f6f6f6; }
+  .rec-main-wrap {
+    overflow: hidden; }
   .rec-main-list-item {
     height: 3.03rem;
     padding: 0.3rem;

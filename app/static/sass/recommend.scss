@@ -6,6 +6,9 @@
   bottom: 43px;
   overflow: hidden;
   background: #f6f6f6;
+  &-wrap{
+      overflow: hidden;
+  }
   &-list {
     &-item {
       height: 3.03rem;
