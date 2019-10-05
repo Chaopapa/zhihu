@@ -1,0 +1,48 @@
+.rec-main {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  left: 0;
+  bottom: 43px;
+  overflow: hidden;
+  background: #f6f6f6; }
+  .rec-main-list-item {
+    height: 3.03rem;
+    padding: 0.3rem;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: .17rem; }
+    .rec-main-list-item h3 {
+      font-size: 0.34rem;
+      color: #1a1a1a; }
+    .rec-main-list-item-content {
+      margin-top: 0.2rem; }
+      .rec-main-list-item-content .rec-text {
+        width: 4.64rem;
+        float: left;
+        line-height: 0.4rem;
+        font-size: 0.24rem; }
+        .rec-main-list-item-content .rec-text img {
+          width: 0.4rem; }
+        .rec-main-list-item-content .rec-text .rec-name {
+          color: #646464; }
+        .rec-main-list-item-content .rec-text .rec-desc {
+          color: #c6c6c6; }
+        .rec-main-list-item-content .rec-text-main {
+          line-height: 0.45rem;
+          height: 0.78rem;
+          font-size: 0.28rem;
+          color: #444444;
+          margin-top: 0.19rem;
+          overflow: hidden; }
+      .rec-main-list-item-content .rec-img {
+        width: 1.9rem;
+        float: right; }
+        .rec-main-list-item-content .rec-img img {
+          width: 1.9rem; }
+    .rec-main-list-item-info p {
+      color: #999999;
+      font-size: 0.26rem;
+      margin-top: 0.26rem; }
+      .rec-main-list-item-info p span {
+        float: right; }

@@ -40,6 +40,24 @@
   position: absolute;
   top: 40px;
   left: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  ul{
+    display: flex;
+    li{
+      flex:1;
+      line-height: 40px;
+      text-align: center;
+      a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        font-size: 15px;
+        color:#999999;
+      }
+    }
+    
+  }
 }
 
 // 首页主要内容

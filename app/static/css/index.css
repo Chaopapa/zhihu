@@ -35,7 +35,21 @@
   height: 40px;
   position: absolute;
   top: 40px;
-  left: 0; }
+  left: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc; }
+  .index-nav ul {
+    display: flex; }
+    .index-nav ul li {
+      flex: 1;
+      line-height: 40px;
+      text-align: center; }
+      .index-nav ul li a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        font-size: 15px;
+        color: #999999; }
 
 .index-main {
   position: absolute;

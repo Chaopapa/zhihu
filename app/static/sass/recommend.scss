@@ -1,0 +1,68 @@
+.rec-main {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  left: 0;
+  bottom: 43px;
+  overflow: hidden;
+  background: #f6f6f6;
+  &-list {
+    &-item {
+      height: 3.03rem;
+      padding: 0.3rem;
+      background: #fff;
+      overflow: hidden;
+      margin-bottom: .17rem;
+      h3 {
+        font-size: 0.34rem;
+        color: #1a1a1a;
+      }
+      &-content {
+        margin-top: 0.2rem;
+        .rec-text {
+          width: 4.64rem;
+          // height: 1.88rem;;
+          float: left;
+          line-height: 0.4rem;
+          font-size: 0.24rem;
+          img {
+            width: 0.4rem;
+          }
+          .rec-name {
+            color: #646464;
+          }
+          .rec-desc {
+            color: #c6c6c6;
+          }
+          &-main {
+            line-height: 0.45rem;
+            height: 0.78rem;
+            font-size: 0.28rem;
+            color: #444444;
+            margin-top: 0.19rem;
+            overflow: hidden;
+          }
+        }
+
+        .rec-img {
+          width: 1.9rem;
+          float: right;
+
+          img {
+            width: 1.9rem;
+          }
+        }
+      }
+      &-info {
+        p {
+          color: #999999;
+          font-size: 0.26rem;
+          margin-top: 0.26rem;
+          span{
+              float: right;
+          }
+        }
+      }
+    }
+  }
+}
