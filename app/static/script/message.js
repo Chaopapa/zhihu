@@ -50,7 +50,13 @@ $(function(){
                     console.log(err);
                 }
             })
-        }
+        },
+
+    });
+
+    //点击切换页面
+    $('.private').click(function(){
+        $('.m-main').load('./private.html');
     })
 
 

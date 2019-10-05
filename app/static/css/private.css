@@ -1,0 +1,57 @@
+.private-main {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 44px;
+  bottom: 43px;
+  left: 0;
+  background: #fff; }
+  .private-main-header {
+    padding: 0 0.42rem;
+    font-size: 0.27rem;
+    height: 0.79rem;
+    line-height: 0.79rem;
+    background: #f6f6f6; }
+    .private-main-header span {
+      color: #999; }
+    .private-main-header a {
+      float: right;
+      color: #0084ff; }
+  .private-main-list li {
+    height: 1.21rem;
+    padding: 0.2rem 0.2rem 0; }
+    .private-main-list li > img {
+      width: 1.02rem;
+      float: left; }
+    .private-main-list li > div {
+      float: left;
+      margin-left: 0.18rem;
+      margin-top: 0.14rem;
+      width: 5.89rem;
+      height: 1.07rem;
+      box-sizing: border-box;
+      border-bottom: 1px solid #ccc; }
+      .private-main-list li > div .private-name img {
+        width: 0.28rem;
+        margin-left: 0.17rem; }
+      .private-main-list li > div .private-name span:nth-of-type(1) {
+        font-size: 0.30rem;
+        color: #646464; }
+      .private-main-list li > div .private-name span:nth-of-type(2) {
+        font-size: 0.22rem;
+        color: #d3d3d3;
+        float: right; }
+      .private-main-list li > div .private-info {
+        margin-top: .18rem; }
+        .private-main-list li > div .private-info span:nth-of-type(1) {
+          font-size: .26rem; }
+        .private-main-list li > div .private-info span:nth-of-type(2) {
+          float: right;
+          font-size: .26rem;
+          color: #d7d7d7; }
+  .private-main-tip {
+    height: .3rem;
+    font-size: .3rem;
+    margin-top: .41rem;
+    color: #bfbfbf;
+    text-align: center; }
