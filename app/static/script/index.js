@@ -11,7 +11,7 @@ $(function() {
           $.each(data.list, function(index, item) {
             html +=
               " <li>" +
-              '<a href="#" class="item">' +
+              '<a href="detail.html" class="item">' +
               '<div class="index-list-title">' +
               "<object>" +
               '<a href="" # class="index-list-title-info">' +
@@ -65,7 +65,7 @@ $(function() {
           $.each(data.list, function(index, item) {
             $item = $(
               " <li>" +
-                '<a href="#" class="item">' +
+                '<a href="detail.html" class="item">' +
                 '<div class="index-list-title">' +
                 "<object>" +
                 '<a href="" # class="index-list-title-info">' +
@@ -161,5 +161,10 @@ $(function() {
         slidesPerView: 6
       });
     }, 100);
+  });
+
+  //打开学习列表
+  $('.goItem').click(function(){
+    window.open('item.html','_self');
   });
 });
