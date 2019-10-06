@@ -80,6 +80,23 @@ let map = {
     //设置响应头
     response.setHeader("Content-Type", "application/json; charset=utf-8");
     response.end(resultStr);
+  },
+  //热榜刷新
+  "/api/index/rankRefresh"(response) {
+    let result = Mock.mock({
+      "list|50": [
+        {
+          "id|+1":1,
+          title: "@ctitle(7,15)",
+          imgSrc: Mock.Random.image("139x139", jCarry.getRandomColor()),
+        }
+      ]
+    });
+    //序列化json
+    let resultStr = JSON.stringify(result);
+    //设置响应头
+    response.setHeader("Content-Type", "application/json; charset=utf-8");
+    response.end(resultStr);
   }
 };
 function mockDataMiddleWare(request, response, next) {

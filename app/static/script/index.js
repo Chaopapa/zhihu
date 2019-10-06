@@ -5,7 +5,7 @@ $(function() {
     tap: true,
     refreshData: function(endScroll) {
       $.ajax({
-        url:noticeRefresh,
+        url: noticeRefresh,
         success: function(data) {
           var html = "";
           $.each(data.list, function(index, item) {
@@ -104,7 +104,6 @@ $(function() {
             );
             $(".index-main-list").append($item);
           });
-        
 
           endScroll();
         },
@@ -129,9 +128,34 @@ $(function() {
     $(".i-main").load("./rank.html");
     setTimeout(function() {
       //热榜
+      
       new MyScroll(".rank-main", {
         click: true,
-        tap: true
+        tap: true,
+        refreshData: function(endScroll) {
+          $.ajax({
+            url: rankRefresh,
+            success: function(data) {
+              var html = "";
+              $.each(data.list, function(index, item) {
+                html +=
+                  '<li class="rank-main-item"><p>' +
+                  item.id +
+                  "</p> <div><p>" +
+                  item.title +
+                  "?" +
+                  '</p><span>92万热度</span></div><img src="' +
+                  item.imgSrc +
+                  '" alt="" /></li>';
+              });
+              $(".rank-main-list").html(html);
+              endScroll();
+            },
+            fail: function(err) {
+              console.log(err);
+            }
+          });
+        }
       });
       var navSwiper = new Swiper(".nav-swiper", {
         slidesPerView: 6
