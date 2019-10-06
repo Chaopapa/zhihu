@@ -31,7 +31,7 @@
     margin-top: 6.27rem;
   }
   &-header {
-    height: 6.27rem;
+    height: 6.28rem;
     background: #fff;
     position: absolute;
     top: 0;
@@ -53,6 +53,7 @@
     }
     p{
         width: 6.93rem;
+        height: .89rem;
         margin-left: .31rem;
         margin-top:.30rem;
         font-size: .35rem;
@@ -69,7 +70,7 @@
     &-info{
         height: .62rem;
         line-height: .62rem;
-        padding: .3rem;
+        padding:  0 .3rem .22rem;
         margin-top:.42rem;
         font-size: .25rem;
         display: flex;
@@ -87,6 +88,18 @@
             color: #fff;
             text-align: center;
         }
+    }
+    &-opa{
+      height: .98rem;
+      border-top:1px solid #ebebeb;
+      background: #fff;
+      display: flex;
+      div{
+        flex: 1;
+        font-size: .28rem;
+        line-height: .98rem;
+        text-align: center;
+      }
     }
   }
   &-title {
@@ -109,7 +122,28 @@
   }
   &-list{
       &-item{
-          
+          height: 2.60rem;
+          background: #fff;
+          padding-left:.2rem;
+          padding-right: .4rem;
+          padding-top:.24rem;
+          font-size: .29rem;
+          color:#444444;
+          img{
+            width: .40rem;
+          }
+          div{
+            margin-top: .24rem;
+            overflow: hidden;
+            p{
+              line-height: .45rem;
+              margin-bottom: .16rem;
+            }
+            span{
+              font-size: .26rem;
+              color:#999999;
+            }
+          }
       }
   }
 }

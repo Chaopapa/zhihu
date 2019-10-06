@@ -26,7 +26,7 @@
   .replies-main-wrap {
     margin-top: 6.27rem; }
   .replies-main-header {
-    height: 6.27rem;
+    height: 6.28rem;
     background: #fff;
     position: absolute;
     top: 0;
@@ -46,6 +46,7 @@
         margin-right: .18rem; }
     .replies-main-header p {
       width: 6.93rem;
+      height: .89rem;
       margin-left: .31rem;
       margin-top: .30rem;
       font-size: .35rem;
@@ -60,7 +61,7 @@
     .replies-main-header-info {
       height: .62rem;
       line-height: .62rem;
-      padding: .3rem;
+      padding: 0 .3rem .22rem;
       margin-top: .42rem;
       font-size: .25rem;
       display: flex;
@@ -76,6 +77,16 @@
         border-radius: 4px;
         color: #fff;
         text-align: center; }
+    .replies-main-header-opa {
+      height: .98rem;
+      border-top: 1px solid #ebebeb;
+      background: #fff;
+      display: flex; }
+      .replies-main-header-opa div {
+        flex: 1;
+        font-size: .28rem;
+        line-height: .98rem;
+        text-align: center; }
   .replies-main-title {
     height: 0.75rem;
     line-height: 0.75rem;
@@ -89,3 +100,22 @@
       text-align: right; }
     .replies-main-title p:nth-of-type(2) {
       width: 1.53rem; }
+  .replies-main-list-item {
+    height: 2.60rem;
+    background: #fff;
+    padding-left: .2rem;
+    padding-right: .4rem;
+    padding-top: .24rem;
+    font-size: .29rem;
+    color: #444444; }
+    .replies-main-list-item img {
+      width: .40rem; }
+    .replies-main-list-item div {
+      margin-top: .24rem;
+      overflow: hidden; }
+      .replies-main-list-item div p {
+        line-height: .45rem;
+        margin-bottom: .16rem; }
+      .replies-main-list-item div span {
+        font-size: .26rem;
+        color: #999999; }
