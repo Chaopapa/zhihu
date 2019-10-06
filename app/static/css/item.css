@@ -1,0 +1,72 @@
+.item-header {
+  height: 43px;
+  line-height: 43px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-sizing: border-box; }
+  .item-header p {
+    width: 32px;
+    font-size: 16px;
+    color: #349dff; }
+  .item-header h3 {
+    width: 68px;
+    font-size: 16px;
+    color: #1a1a1a;
+    font-weight: normal; }
+  .item-header span {
+    font-size: 10px;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    color: #808080;
+    border-radius: 50%;
+    background: #f6f6f6;
+    display: block;
+    align-self: center; }
+
+.item-main {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  top: 43px;
+  overflow: hidden; }
+  .item-main-list {
+    margin-top: 0.21rem; }
+    .item-main-list-item {
+      margin-bottom: 0.39rem;
+      padding: 0 0.4rem;
+      height: 1.87rem;
+      color: #fff; }
+      .item-main-list-item img {
+        width: 1.4rem;
+        height: 1.86rem;
+        float: left; }
+      .item-main-list-item > div {
+        width: 5.13rem;
+        float: right; }
+        .item-main-list-item > div h3 {
+          width: 4.25rem;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: 0.33rem;
+          color: #444444;
+          font-weight: normal; }
+        .item-main-list-item > div p:nth-of-type(1) {
+          font-size: 0.24rem;
+          margin-top: 0.19rem;
+          color: #7c7c7c; }
+          .item-main-list-item > div p:nth-of-type(1) span {
+            color: #0084ff; }
+        .item-main-list-item > div p:nth-of-type(2) {
+          font-size: .22rem;
+          margin-top: .50rem;
+          color: #a6a6a6; }
+          .item-main-list-item > div p:nth-of-type(2) .item-more {
+            float: right; }
