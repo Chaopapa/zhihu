@@ -41,6 +41,40 @@ let map = {
         }
       ]
     });
+
+    //序列化json
+    let resultStr = JSON.stringify(result);
+    //设置响应头
+    response.setHeader("Content-Type", "application/json; charset=utf-8");
+    response.end(resultStr);
+  },
+  //主页
+  "/api/index/noticeRefresh"(response) {
+    let result = Mock.mock({
+      "list|10": [
+        {
+          name: "@cname",
+          imgSrc: Mock.Random.image("33x33", jCarry.getRandomColor()),
+          content: "@cparagraph(7,10)"
+        }
+      ]
+    });
+    //序列化json
+    let resultStr = JSON.stringify(result);
+    //设置响应头
+    response.setHeader("Content-Type", "application/json; charset=utf-8");
+    response.end(resultStr);
+  },
+  "/api/index/noticeLoad"(response) {
+    let result = Mock.mock({
+      "list|5": [
+        {
+          name: "@cname",
+          imgSrc: Mock.Random.image("33x33", jCarry.getRandomColor()),
+          content: "@cparagraph(7,10)"
+        }
+      ]
+    });
     //序列化json
     let resultStr = JSON.stringify(result);
     //设置响应头
