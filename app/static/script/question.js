@@ -1,0 +1,12 @@
+$(function(){
+    //点击取消
+    $('.question-header-cancel').click(function(){
+        history.back();
+    });
+    //发布问题
+    $('.question-header-pub').click(function(){
+        sessionStorage.setItem('qt',$('.qt').val());
+        sessionStorage.setItem('desc',$('.desc').val());
+        location.href="./question2.html";
+    });
+})

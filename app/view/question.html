@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>提个问题</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../static/css/reset.css" />
+    <link rel="stylesheet" href="../static/css/question.css">
+  </head>
+  <body>
+    <div class="question-header">
+      <p class="question-header-cancel">取消</p>
+      <p class="question-header-pub">发布问题</p>
+    </div>
+    <div class="question-main">
+        <input class="qt" name="qt" type="text" placeholder="输入问题并已问号结尾">
+        <input class="desc" name="desc" type="text" placeholder="对问题进行补充说明">
+    </div>
+    <script src="../static/script/zepto/zepto.js"></script>
+    <script src="../static/script/main.js"></script>
+    <script src="../static/script/question.js"></script>
+  </body>
 </html>
