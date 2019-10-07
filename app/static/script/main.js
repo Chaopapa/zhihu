@@ -11,7 +11,7 @@ $(function() {
     //返回功能
     $('.cc-back').click(function(){
         history.back();
-    })
+    });
 
 
 

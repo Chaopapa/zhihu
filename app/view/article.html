@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>写文章</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../static/css/reset.css" />
+    <link rel="stylesheet" href="../static/css/article.css">
+  </head>
+  <body>
+    <div class="article-header">
+      <p class="article-header-cancel cc-back">取消</p>
+      <h4>撰写文章</h4>
+      <p class="article-header-pub">
+        <span>草稿</span>
+        <span>
+          <a href="javascript:void(0)" class="article-pub">发布</a>
+        </span>
+      </p>
+    </div>
+    <div class="article-main">
+      <input
+        class="at"
+        name="at"
+        type="text"
+        placeholder="请输入标题"
+      />
+      <input
+        class="content"
+        name="content"
+        type="text"
+        placeholder="请输入正文"
+      />
+    </div>
+    <script src="../static/script/zepto/zepto.js"></script>
+    <script src="../static/script/article.js"></script>
+    <script src="../static/script/main.js"></script>
+  </body>
 </html>
