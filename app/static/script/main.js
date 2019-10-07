@@ -8,6 +8,11 @@ $(function() {
     resetRemUnit();
     window.onresize = resetRemUnit;
 
+    //返回功能
+    $('.cc-back').click(function(){
+        history.back();
+    })
+
 
 
 
