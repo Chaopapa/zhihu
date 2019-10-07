@@ -40,7 +40,6 @@ $(function() {
 
   var opaList = $(".add-opa a");
   opaList.eq(0).click(function() {
-    alert();
     $(".add-list").removeClass("add-list-normal");
   });
 });
