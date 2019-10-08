@@ -173,15 +173,11 @@
     display: flex;
     &-img{
       flex: 1;
-      &::before{
-        content: "图"
-      }
+      
     }
     &-emoji{
       flex: 1;
-     &::before{
-      content: "emoji";
-     }
+     
     }
   }
   

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .detail-header {
   position: absolute;
   width: 100%;
@@ -134,12 +133,8 @@
     display: flex; }
     .detail-bottom-opa-img {
       flex: 1; }
-      .detail-bottom-opa-img::before {
-        content: "图"; }
     .detail-bottom-opa-emoji {
       flex: 1; }
-      .detail-bottom-opa-emoji::before {
-        content: "emoji"; }
   .detail-bottom-input {
     width: 232px;
     height: 100%; }

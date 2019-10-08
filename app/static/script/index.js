@@ -38,15 +38,23 @@ $(function() {
               "</p>" +
               "</div>" +
               '<div class="index-list-opa">' +
-              '<object data="" type="">' +
-              '<a href="">转发</a>' +
-              '<a href="">评论</a>' +
-              '<a href="">点赞</a>' +
-              '<a href="">更多</a>' +
-              "</object>" +
-              " </div>" +
-              " </a>" +
-              "</li>";
+              '<object data="" type="">'+
+                    '<a href="">'+
+                      '<span class="iconfont icon-zhuanfa"></span>'+
+                    '</a>'+
+                    '<a href="">'+
+                      '<span class="iconfont icon-tubiaozhizuo-"></span>'+
+                    '</a>'+
+                    '<a href="">'+
+                      '<span class="iconfont icon-changyongtubiao-mianxing-"></span>'+
+                    '</a>'+
+                    '<a href="">'+
+                      '<span class="iconfont icon-gengduo"></span>'+
+                    '</a>'+
+                  '</object>'+
+              '</div>' +
+              '</a>' +
+              '</li>';
           });
           $(".index-main-list").html(html);
 

@@ -35,8 +35,13 @@ body {
     p {
       width: 61px;
       height: 61px;
+      line-height: 61px;
       border-radius: 50%;
       text-align: center;
+      .iconfont{
+        color:#fff;
+        font-size: 24px;
+      }
     }
     &:nth-of-type(1) {
       p {
