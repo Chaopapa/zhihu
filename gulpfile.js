@@ -155,7 +155,7 @@ gulp.task('webserver', ()=>{
   .pipe(
     webserver({
       host: '127.0.0.1',
-      port: '8080',
+      port: '8089',
       livereload: true,//热更新
       directoryListing: true,//是否文件夹列表
       open: true,//打开浏览器
